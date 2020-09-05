@@ -1,0 +1,20 @@
+media = 0
+idadeAnterior = 0
+mulheresMenos20 = 0
+hoemeMaisVelho = ''
+for a in range(0,4):
+    nome = input('digite seu nome: ')
+    idade = int(input('digite sua idade: '))
+    sexo = input('digite F para feminino e M para masculino: ')
+    if sexo in 'fF' and idade<20:
+        mulheresMenos20 += 1
+
+    media += idade
+
+    if sexo in 'Mm' and idade>idadeAnterior:
+        homemMaisVelho = nome
+    idadeAnterior = idade
+
+print('o homem mais velho é: {}'.format(homemMaisVelho))
+print('tem {} mulheres menores de 20 anos'.format(mulheresMenos20))
+print('a média de idade é {} '.format(media/4))

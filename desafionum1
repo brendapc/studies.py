@@ -1,0 +1,16 @@
+# nome = input('digite seu nome')
+# print('santo'in nome)
+
+# nome = str(input('digite seu nome completo:')).strip() #remove espaços antes e depois
+# print('seu nome em maiúsculas é {}'.format(nome.upper()))
+# print('seu nome em minúscula é {}'.format(nome.lower()))
+# print('seu nome sem os espaços tem {} letras'.format(len(nome)-nome.count(' ')))
+#
+
+num = int(input('informe um número'))
+
+print('analisando o número {}'.format(num))
+print('Unidade: {}'.format())
+print('Dezena: {}'.format())
+print('Centena: {}'.format())
+print('Milhar: {}'.format())

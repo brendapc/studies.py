@@ -1,0 +1,7 @@
+# nome começa com ana
+nome = str(input('digite seu nome: ')).strip()
+print('seu nome começa com ana? {}'.format(nome[:3].lower() == "ana"))
+
+#nome contem ana em qualquer lugar do nome
+nome = str(input('digite seu nome: ')).strip()
+print('seu nome tem ana? {}'.format('ana' in nome.lower()))
