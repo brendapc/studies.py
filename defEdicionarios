@@ -1,0 +1,15 @@
+def notas(*n, sit = False):
+    r = dict()
+    r['total'] = len(n)
+    r['maior'] = max(n)
+    r['menor'] = min(n)
+    r['media'] = sum(n)/len(n)
+    if sit:
+        if r['media']>=7:
+            r['situação'] = 'aprovado'
+        else:
+            r['situação'] = 'reprovado'
+    return r
+
+resp = notas(3,5,6,7,3, sit = True)
+print(resp)
